@@ -5,7 +5,7 @@ function setarMensagemSucesso(string $mensagem):void{
     $_SESSION['mensagem-de-sucesso'] = $mensagem;
 }
 
-function obterMensagemSucesso(string $mensagem): ?string{
+function obterMensagemSucesso(): ?string{
     if(isset($_SESSION['mensagem-de-sucesso'])){
         return $_SESSION['mensagem-de-sucesso'];
     }
